@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:layout_margin="5dp">
     <ImageView
         android:id="@+id/img_Info_avatar"
@@ -11,18 +12,18 @@
         />
     <TextView
         android:id="@+id/tv_Info_username"
-        android:layout_toEndOf="@id/img_Info_avatar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-30dp"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:gravity="center_vertical"
         android:text="weiyashuai"/>
     <ImageView
         android:id="@+id/img_Info_picture"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/img_Info_avatar"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:maxWidth="150dp"
-        android:minWidth="50dp"
+        android:minWidth="100dp"
         android:layout_height="wrap_content"
         android:src="@mipmap/photo"/>
     <TextView
@@ -53,4 +54,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-</RelativeLayout>
+</LinearLayout>
