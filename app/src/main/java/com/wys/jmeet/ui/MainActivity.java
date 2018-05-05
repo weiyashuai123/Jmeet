@@ -43,10 +43,10 @@ public class MainActivity extends BaseActivity {
     }
 
     protected void bindView() {
-        et_username_receive = findViewById(R.id.et_username_receive);
-        et_message = findViewById(R.id.et_message);
-        btn_send = findViewById(R.id.btn_send);
-        tv_message = findViewById(R.id.tv_message);
+//        et_username_receive = findViewById(R.id.et_username_receive);
+//        et_message = findViewById(R.id.et_message);
+//        btn_send = findViewById(R.id.btn_send);
+//        tv_message = findViewById(R.id.tv_message);
     }
 
     //收到离线消息

@@ -18,6 +18,14 @@
         android:layout_height="30dp"
         android:gravity="center_vertical"
         android:text="weiyashuai"/>
+    <TextView
+        android:id="@+id/tv_Info_time"
+        android:layout_marginTop="-25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="end"
+        android:gravity="center_vertical"
+        android:text="2018-5-5 11:55"/>
     <ImageView
         android:id="@+id/img_Info_picture"
         android:layout_gravity="center_horizontal"
@@ -31,27 +39,26 @@
         android:layout_below="@id/img_Info_picture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="skjlafjlkjsfdljfjjhkglfkjhlgfskjhgfkljsfkgljhgjlhfdjhgjkhfsdkhglhjkfsdgfdsgfsdg"/>
+        android:maxLines="5"
+        android:text="描述一下这张图片吧"/>
+
 
     <TextView
-        android:id="@+id/tv_Info_time"
-        android:layout_below="@id/tv_Info_info"
-        android:layout_alignParentEnd="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:text="2018-5-5 11:51:55"/>
-    <TextView
-        android:layout_below="@id/tv_Info_info"
-        android:drawableLeft="@mipmap/m"
+        android:drawableStart="@mipmap/agree_gray"
         android:id="@+id/tv_Info_agreeNumber"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="点赞数量"
+
+        android:layout_height="20dp"
+        android:gravity="center_vertical" />
     <TextView
-        android:layout_toEndOf="@id/tv_Info_agreeNumber"
-        android:drawableLeft="@mipmap/m"
+        android:layout_marginTop="-20dp"
+        android:drawableStart="@mipmap/comment_gray"
         android:id="@+id/tv_Info_commentNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="评论数量"
+        android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:gravity="center_vertical" />
 
 </LinearLayout>
