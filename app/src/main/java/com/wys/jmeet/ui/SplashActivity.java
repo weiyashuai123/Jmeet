@@ -25,25 +25,8 @@ public class SplashActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                if (username.isEmpty()) {
-                    startActivity(LoginActivity.class);
-                    finish();
-                } else {
-                    JMessageClient.login(username, password, new BasicCallback() {
-                        @Override
-                        public void gotResult(int code, String info) {
-                            if (code == 0) {
-                                startActivity(MainActivity.class);
-                                finish();
-                            } else {
-                                startActivity(LoginActivity.class);
-                                toast(info);
-                                finish();
-                            }
-                        }
-                    });
-
-                }
+                startActivity(MainActivity.class);
+                finish();
             }
         }, 1000);
     }

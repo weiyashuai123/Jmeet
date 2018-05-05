@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <ImageView
+        android:id="@+id/img_Info_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+    <TextView
+        android:id="@+id/tv_Info_username"
+        android:layout_toEndOf="@id/img_Info_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="weiyashuai"/>
+    <ImageView
+        android:id="@+id/img_Info_picture"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_Info_avatar"
+        android:layout_width="wrap_content"
+        android:maxWidth="150dp"
+        android:minWidth="50dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/photo"/>
+    <TextView
+        android:id="@+id/tv_Info_info"
+        android:layout_below="@id/img_Info_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="skjlafjlkjsfdljfjjhkglfkjhlgfskjhgfkljsfkgljhgjlhfdjhgjkhfsdkhglhjkfsdgfdsgfsdg"/>
+
+    <TextView
+        android:id="@+id/tv_Info_time"
+        android:layout_below="@id/tv_Info_info"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="2018-5-5 11:51:55"/>
+    <TextView
+        android:layout_below="@id/tv_Info_info"
+        android:drawableLeft="@mipmap/m"
+        android:id="@+id/tv_Info_agreeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toEndOf="@id/tv_Info_agreeNumber"
+        android:drawableLeft="@mipmap/m"
+        android:id="@+id/tv_Info_commentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

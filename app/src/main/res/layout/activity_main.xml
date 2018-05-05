@@ -1,57 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bg_meet_mohu"
+    android:orientation="vertical"
     tools:context=".ui.MainActivity">
+    <include layout="@layout/my_titlebar"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:id="@+id/recycler_main">
+    </android.support.v7.widget.RecyclerView>
 
-
-    <EditText
-        android:id="@+id/et_username_receive"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="82dp"
-        android:ems="10"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="78dp" />
-
-    <EditText
-        android:id="@+id/et_message"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="146dp"
-        android:ems="10"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="136dp" />
-
-    <Button
-        android:id="@+id/btn_send"
-        android:layout_width="202dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="210dp"
-        android:text="send"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="209dp" />
-
-    <TextView
-        android:id="@+id/tv_message"
-        android:layout_width="264dp"
-        android:layout_height="141dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/et_username_receive"
-        android:layout_marginBottom="90dp"
-        android:text="TextView" />
-
-</RelativeLayout>
+</LinearLayout>
